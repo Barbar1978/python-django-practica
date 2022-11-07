@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>listado de grupo familiar</title>
+  </head>
+
+  <body>
+    <h1>mi grupo familiar</h1>
+    <section>
+      {% for elemento in familia %}
+      <article>
+        <h3>{{elemento.nombre }}</h3>
+        <p>{{elemento.contenido}}</p>
+        <img src="{{elemento.imagen}}" />
+        <footer>parentezco: {{ elemento.parentezco}}</footer>
+      </article>
+      {% endfor %}
+    </section>
+  </body>
+</html>
